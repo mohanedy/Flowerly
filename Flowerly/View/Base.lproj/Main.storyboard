@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Flowerly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SfR-F2-ITl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GAv-fd-RtW">
+                                <rect key="frame" x="104.66666666666667" y="94" width="204.66666666666663" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flowerly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6q-Fw-2f7">
+                                        <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="35"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page-3" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-Ap-HKg">
+                                        <rect key="frame" x="169.66666666666663" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="9Ew-KC-awU"/>
+                                            <constraint firstAttribute="width" constant="35" id="EHG-Bc-vSo"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instantly identify your flowers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiY-TT-Pu1">
+                                <rect key="frame" x="66.333333333333343" y="139" width="281.33333333333326" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4r1-Mw-HrQ" customClass="CardView" customModule="Flowerly" customModuleProvider="target">
+                                <rect key="frame" x="20" y="430" width="374" height="89"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-FG-UF4">
+                                        <rect key="frame" x="20" y="5" width="334" height="79"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sq-Iv-7y5" customClass="VerticalButton" customModule="Flowerly" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="79"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Share" image="share">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wY-kE-4Cw" customClass="VerticalButton" customModule="Flowerly" customModuleProvider="target">
+                                                <rect key="frame" x="93" y="0.0" width="136" height="79"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Identify Flowers" image="Page-3">
+                                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="identifyUsingCameraPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQQ-AT-K5h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeL-4v-wd8" customClass="VerticalButton" customModule="Flowerly" customModuleProvider="target">
+                                                <rect key="frame" x="274" y="0.0" width="60" height="79"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Gallery" image="photos">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="identifyUsingGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hlk-J3-IDY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="bwb-FG-UF4" firstAttribute="top" secondItem="4r1-Mw-HrQ" secondAttribute="top" constant="5" id="NbG-Qi-yka"/>
+                                    <constraint firstItem="bwb-FG-UF4" firstAttribute="leading" secondItem="4r1-Mw-HrQ" secondAttribute="leading" constant="20" id="YjK-fq-ZfQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="bwb-FG-UF4" secondAttribute="bottom" constant="5" id="fns-k8-u7r"/>
+                                    <constraint firstAttribute="trailing" secondItem="bwb-FG-UF4" secondAttribute="trailing" constant="20" id="oMH-cO-hN7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="c1L-sb-pSi">
+                                <rect key="frame" x="10" y="539" width="394" height="313"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 14" translatesAutoresizingMaskIntoConstraints="NO" id="MMh-bw-2Gb">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="263"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decorate your garden with flowers now and identify the flower name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieh-xb-vJj">
+                                        <rect key="frame" x="0.0" y="263" width="394" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QTW-vK-crX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SfR-F2-ITl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="31k-Uk-7HM"/>
+                            <constraint firstItem="4r1-Mw-HrQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QFx-Wd-zdl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c1L-sb-pSi" secondAttribute="bottom" constant="10" id="RiJ-mn-5a5"/>
+                            <constraint firstItem="GAv-fd-RtW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Xhs-jG-wAy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1L-sb-pSi" secondAttribute="trailing" constant="10" id="cIC-uG-FrS"/>
+                            <constraint firstItem="GAv-fd-RtW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dD5-co-Vrs"/>
+                            <constraint firstItem="c1L-sb-pSi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dEh-VS-EH4"/>
+                            <constraint firstAttribute="bottom" secondItem="SfR-F2-ITl" secondAttribute="bottom" id="eYf-x8-URf"/>
+                            <constraint firstAttribute="trailing" secondItem="SfR-F2-ITl" secondAttribute="trailing" id="f0v-se-58v"/>
+                            <constraint firstItem="PiY-TT-Pu1" firstAttribute="top" secondItem="GAv-fd-RtW" secondAttribute="bottom" constant="10" id="g3s-Pw-ovM"/>
+                            <constraint firstItem="PiY-TT-Pu1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzd-fJ-IqO"/>
+                            <constraint firstItem="c1L-sb-pSi" firstAttribute="top" secondItem="4r1-Mw-HrQ" secondAttribute="bottom" constant="20" id="nSl-7c-ulI"/>
+                            <constraint firstItem="SfR-F2-ITl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qQH-Dd-Qe1"/>
+                            <constraint firstItem="4r1-Mw-HrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rtf-Em-gUq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4r1-Mw-HrQ" secondAttribute="trailing" constant="20" id="xvs-tI-4sb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="dIy-EI-W0O" kind="presentation" identifier="detailsScreenSegue" modalPresentationStyle="fullScreen" id="9MF-gY-NRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.6956521739130448" y="143.97321428571428"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="MzZ-zj-fpq">
+            <objects>
+                <viewController id="dIy-EI-W0O" customClass="DetailsViewController" customModule="Flowerly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xuX-WN-V6g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iEH-Zc-CUz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="aNm-8o-TqE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fqg-o0-3l8">
+                                        <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dLk-eM-dHS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adI-kI-wkV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="adI-kI-wkV" secondAttribute="trailing" id="Fum-8u-jvS"/>
+                                                <constraint firstItem="adI-kI-wkV" firstAttribute="leading" secondItem="dLk-eM-dHS" secondAttribute="leading" id="MVu-yY-Vmf"/>
+                                                <constraint firstItem="adI-kI-wkV" firstAttribute="top" secondItem="dLk-eM-dHS" secondAttribute="top" id="Smr-OB-Od4"/>
+                                                <constraint firstAttribute="bottom" secondItem="adI-kI-wkV" secondAttribute="bottom" id="juI-yt-SDD"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                    </visualEffectView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBE-Oh-jv9" customClass="CardView" customModule="Flowerly" customModuleProvider="target">
+                                <rect key="frame" x="10" y="324" width="394" height="538"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="65X-18-StF">
+                                        <rect key="frame" x="10" y="10" width="374" height="518"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EcR-yU-QxI">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flower Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-RX-bs1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="eOg-vd-yDn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nR8-RX-bs1" secondAttribute="bottom" id="XGL-fv-WaR"/>
+                                                    <constraint firstItem="nR8-RX-bs1" firstAttribute="leading" secondItem="EcR-yU-QxI" secondAttribute="leading" id="aJQ-sM-13b"/>
+                                                    <constraint firstItem="nR8-RX-bs1" firstAttribute="top" secondItem="EcR-yU-QxI" secondAttribute="top" id="c7f-gv-SSr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nR8-RX-bs1" secondAttribute="trailing" id="lTr-XP-63a"/>
+                                                </constraints>
+                                            </view>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="sOv-h4-0KF">
+                                                <rect key="frame" x="0.0" y="40" width="374" height="478"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwG-AP-gVr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="541"/>
+                                                        <string key="text">A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears [1]. There are over three hundred species and thousands of cultivars [2]. They form a group of plants that can be erect shrubs, climbing, or trailing, with stems that are often armed with sharp prickles [3]. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds[4]. Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa [5]. Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies [6]. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height[7]. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.[8]</string>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="xwG-AP-gVr" firstAttribute="leading" secondItem="sOv-h4-0KF" secondAttribute="leading" id="GBM-L9-Muw"/>
+                                                    <constraint firstItem="xwG-AP-gVr" firstAttribute="width" secondItem="sOv-h4-0KF" secondAttribute="width" id="SmL-wX-p58"/>
+                                                    <constraint firstItem="xwG-AP-gVr" firstAttribute="top" secondItem="sOv-h4-0KF" secondAttribute="top" id="ZXu-Gt-MAz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xwG-AP-gVr" secondAttribute="bottom" id="d9i-n7-xFH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xwG-AP-gVr" secondAttribute="trailing" id="yH6-hS-b5D"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="lAa-f4-ZZz"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="Yhf-Wd-bhb"/>
+                                            </scrollView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="65X-18-StF" secondAttribute="trailing" constant="10" id="XrZ-VX-sNl"/>
+                                    <constraint firstItem="65X-18-StF" firstAttribute="leading" secondItem="rBE-Oh-jv9" secondAttribute="leading" constant="10" id="haq-pR-5xw"/>
+                                    <constraint firstAttribute="bottom" secondItem="65X-18-StF" secondAttribute="bottom" constant="10" id="uv4-9z-OKK"/>
+                                    <constraint firstItem="65X-18-StF" firstAttribute="top" secondItem="rBE-Oh-jv9" secondAttribute="top" constant="10" id="ycq-jp-ZA0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f2-wB-kzv">
+                                <rect key="frame" x="10" y="54" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="AB5-Ah-NBd"/>
+                                    <constraint firstAttribute="height" constant="40" id="kLY-1w-uDg"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="dIy-EI-W0O" eventType="touchUpInside" id="UCf-NH-PJr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rBE-Oh-jv9" firstAttribute="top" secondItem="vsC-DO-JL4" secondAttribute="top" constant="280" id="0Hp-W8-ey9"/>
+                            <constraint firstItem="rBE-Oh-jv9" firstAttribute="trailing" secondItem="vsC-DO-JL4" secondAttribute="trailing" constant="-10" id="0y7-xf-C6C"/>
+                            <constraint firstItem="8f2-wB-kzv" firstAttribute="top" secondItem="vsC-DO-JL4" secondAttribute="top" constant="10" id="9C6-Xp-6yM"/>
+                            <constraint firstItem="iEH-Zc-CUz" firstAttribute="trailing" secondItem="vsC-DO-JL4" secondAttribute="trailing" id="Kh2-E8-d62"/>
+                            <constraint firstAttribute="bottom" secondItem="iEH-Zc-CUz" secondAttribute="bottom" id="Mex-5d-Evc"/>
+                            <constraint firstItem="8f2-wB-kzv" firstAttribute="leading" secondItem="vsC-DO-JL4" secondAttribute="leading" constant="10" id="Pdj-TR-e5s"/>
+                            <constraint firstItem="iEH-Zc-CUz" firstAttribute="leading" secondItem="vsC-DO-JL4" secondAttribute="leading" id="Ure-TL-BDD"/>
+                            <constraint firstItem="rBE-Oh-jv9" firstAttribute="bottom" secondItem="vsC-DO-JL4" secondAttribute="bottom" id="sMw-c4-6U1"/>
+                            <constraint firstItem="rBE-Oh-jv9" firstAttribute="leading" secondItem="vsC-DO-JL4" secondAttribute="leading" constant="10" id="vGs-z8-gQG"/>
+                            <constraint firstItem="iEH-Zc-CUz" firstAttribute="top" secondItem="xuX-WN-V6g" secondAttribute="top" id="wGW-U1-kez"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vsC-DO-JL4"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="8f2-wB-kzv" id="hCM-1K-G92"/>
+                        <outlet property="colorView" destination="adI-kI-wkV" id="vhQ-3O-Mzn"/>
+                        <outlet property="descLabel" destination="xwG-AP-gVr" id="iGL-Hv-g85"/>
+                        <outlet property="flowerImage" destination="aNm-8o-TqE" id="E94-nJ-NGE"/>
+                        <outlet property="nameLabel" destination="nR8-RX-bs1" id="dnn-Cu-lg8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41Z-GJ-hYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.89855072463774" y="143.97321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 14" width="398" height="263"/>
+        <image name="Page-3" width="47.666667938232422" height="42.666667938232422"/>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="background" width="462" height="708"/>
+        <image name="photos" width="44" height="44"/>
+        <image name="share" width="31.333333969116211" height="34"/>
+    </resources>
+</document>

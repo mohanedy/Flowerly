@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E006A5C245CAA5F00FAC914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006A5B245CAA5F00FAC914 /* AppDelegate.swift */; };
+		9E006A5E245CAA5F00FAC914 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006A5D245CAA5F00FAC914 /* SceneDelegate.swift */; };
+		9E006A60245CAA5F00FAC914 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006A5F245CAA5F00FAC914 /* HomeViewController.swift */; };
+		9E006A63245CAA5F00FAC914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E006A61245CAA5F00FAC914 /* Main.storyboard */; };
+		9E006A65245CAA6200FAC914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E006A64245CAA6200FAC914 /* Assets.xcassets */; };
+		9E006A68245CAA6200FAC914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E006A66245CAA6200FAC914 /* LaunchScreen.storyboard */; };
+		9E006A70245CAA7500FAC914 /* FlowerlyClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9E006A6F245CAA7500FAC914 /* FlowerlyClassifier.mlmodel */; };
+		9E006A73245CAF6400FAC914 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006A72245CAF6400FAC914 /* CardView.swift */; };
+		9E006A75245CC40B00FAC914 /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E006A74245CC40B00FAC914 /* VerticalButton.swift */; };
+		9E079552245DFAEF00E9DC1C /* UIViewController+VSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E079551245DFAEF00E9DC1C /* UIViewController+VSpinner.swift */; };
+		9E079554245E074100E9DC1C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E079553245E074100E9DC1C /* Constants.swift */; };
+		9E079556245E07CB00E9DC1C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E079555245E07CB00E9DC1C /* DetailsViewController.swift */; };
+		9E079558245E259200E9DC1C /* WikiServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E079557245E259200E9DC1C /* WikiServices.swift */; };
+		9E07955A245E263600E9DC1C /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E079559245E263600E9DC1C /* Flower.swift */; };
+		B6E83C2FAAD7685FDD454079 /* Pods_Flowerly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742B5EBF335FDB6917A65EA2 /* Pods_Flowerly.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06D2D8E11A5578DEC474C87B /* Pods-Flowerly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flowerly.debug.xcconfig"; path = "Target Support Files/Pods-Flowerly/Pods-Flowerly.debug.xcconfig"; sourceTree = "<group>"; };
+		742B5EBF335FDB6917A65EA2 /* Pods_Flowerly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flowerly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E006A58245CAA5F00FAC914 /* Flowerly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flowerly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E006A5B245CAA5F00FAC914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E006A5D245CAA5F00FAC914 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9E006A5F245CAA5F00FAC914 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9E006A62245CAA5F00FAC914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E006A64245CAA6200FAC914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E006A67245CAA6200FAC914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E006A69245CAA6200FAC914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E006A6F245CAA7500FAC914 /* FlowerlyClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerlyClassifier.mlmodel; sourceTree = "<group>"; };
+		9E006A72245CAF6400FAC914 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9E006A74245CC40B00FAC914 /* VerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
+		9E079551245DFAEF00E9DC1C /* UIViewController+VSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+VSpinner.swift"; sourceTree = "<group>"; };
+		9E079553245E074100E9DC1C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9E079555245E07CB00E9DC1C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9E079557245E259200E9DC1C /* WikiServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiServices.swift; sourceTree = "<group>"; };
+		9E079559245E263600E9DC1C /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flower.swift; sourceTree = "<group>"; };
+		B2037924B96C66C44AA73EAE /* Pods-Flowerly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flowerly.release.xcconfig"; path = "Target Support Files/Pods-Flowerly/Pods-Flowerly.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E006A55245CAA5F00FAC914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E83C2FAAD7685FDD454079 /* Pods_Flowerly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		960445E5344AD2B763953E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06D2D8E11A5578DEC474C87B /* Pods-Flowerly.debug.xcconfig */,
+				B2037924B96C66C44AA73EAE /* Pods-Flowerly.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E006A4F245CAA5F00FAC914 = {
+			isa = PBXGroup;
+			children = (
+				9E006A5A245CAA5F00FAC914 /* Flowerly */,
+				9E006A59245CAA5F00FAC914 /* Products */,
+				960445E5344AD2B763953E68 /* Pods */,
+				B5E7307F80C6306B01C1B4FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E006A59245CAA5F00FAC914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A58245CAA5F00FAC914 /* Flowerly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E006A5A245CAA5F00FAC914 /* Flowerly */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A7A245CC6CE00FAC914 /* Extentions */,
+				9E006A71245CAF3500FAC914 /* View */,
+				9E006A78245CC69500FAC914 /* Model */,
+				9E006A77245CC67A00FAC914 /* Main */,
+				9E006A76245CC64500FAC914 /* Controller */,
+				9E006A79245CC6B700FAC914 /* Supporting Files */,
+				9E006A69245CAA6200FAC914 /* Info.plist */,
+			);
+			path = Flowerly;
+			sourceTree = "<group>";
+		};
+		9E006A71245CAF3500FAC914 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A61245CAA5F00FAC914 /* Main.storyboard */,
+				9E006A66245CAA6200FAC914 /* LaunchScreen.storyboard */,
+				9E006A72245CAF6400FAC914 /* CardView.swift */,
+				9E006A74245CC40B00FAC914 /* VerticalButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E006A76245CC64500FAC914 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A5F245CAA5F00FAC914 /* HomeViewController.swift */,
+				9E079555245E07CB00E9DC1C /* DetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E006A77245CC67A00FAC914 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A5B245CAA5F00FAC914 /* AppDelegate.swift */,
+				9E006A5D245CAA5F00FAC914 /* SceneDelegate.swift */,
+				9E079553245E074100E9DC1C /* Constants.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9E006A78245CC69500FAC914 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A6F245CAA7500FAC914 /* FlowerlyClassifier.mlmodel */,
+				9E079557245E259200E9DC1C /* WikiServices.swift */,
+				9E079559245E263600E9DC1C /* Flower.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E006A79245CC6B700FAC914 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E006A64245CAA6200FAC914 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E006A7A245CC6CE00FAC914 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				9E079551245DFAEF00E9DC1C /* UIViewController+VSpinner.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		B5E7307F80C6306B01C1B4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				742B5EBF335FDB6917A65EA2 /* Pods_Flowerly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E006A57245CAA5F00FAC914 /* Flowerly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E006A6C245CAA6200FAC914 /* Build configuration list for PBXNativeTarget "Flowerly" */;
+			buildPhases = (
+				0CE549BF84AC5CB66E13B50A /* [CP] Check Pods Manifest.lock */,
+				9E006A54245CAA5F00FAC914 /* Sources */,
+				9E006A55245CAA5F00FAC914 /* Frameworks */,
+				9E006A56245CAA5F00FAC914 /* Resources */,
+				2D3E253313CF4973818B4357 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flowerly;
+			productName = Flowerly;
+			productReference = 9E006A58245CAA5F00FAC914 /* Flowerly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E006A50245CAA5F00FAC914 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Mohaned Yossry";
+				TargetAttributes = {
+					9E006A57245CAA5F00FAC914 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9E006A53245CAA5F00FAC914 /* Build configuration list for PBXProject "Flowerly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E006A4F245CAA5F00FAC914;
+			productRefGroup = 9E006A59245CAA5F00FAC914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E006A57245CAA5F00FAC914 /* Flowerly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E006A56245CAA5F00FAC914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E006A68245CAA6200FAC914 /* LaunchScreen.storyboard in Resources */,
+				9E006A65245CAA6200FAC914 /* Assets.xcassets in Resources */,
+				9E006A63245CAA5F00FAC914 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE549BF84AC5CB66E13B50A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flowerly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D3E253313CF4973818B4357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flowerly/Pods-Flowerly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flowerly/Pods-Flowerly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flowerly/Pods-Flowerly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E006A54245CAA5F00FAC914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E006A60245CAA5F00FAC914 /* HomeViewController.swift in Sources */,
+				9E079558245E259200E9DC1C /* WikiServices.swift in Sources */,
+				9E006A5C245CAA5F00FAC914 /* AppDelegate.swift in Sources */,
+				9E079556245E07CB00E9DC1C /* DetailsViewController.swift in Sources */,
+				9E006A5E245CAA5F00FAC914 /* SceneDelegate.swift in Sources */,
+				9E07955A245E263600E9DC1C /* Flower.swift in Sources */,
+				9E006A70245CAA7500FAC914 /* FlowerlyClassifier.mlmodel in Sources */,
+				9E006A73245CAF6400FAC914 /* CardView.swift in Sources */,
+				9E006A75245CC40B00FAC914 /* VerticalButton.swift in Sources */,
+				9E079552245DFAEF00E9DC1C /* UIViewController+VSpinner.swift in Sources */,
+				9E079554245E074100E9DC1C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E006A61245CAA5F00FAC914 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E006A62245CAA5F00FAC914 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E006A66245CAA6200FAC914 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E006A67245CAA6200FAC914 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E006A6A245CAA6200FAC914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E006A6B245CAA6200FAC914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E006A6D245CAA6200FAC914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D2D8E11A5578DEC474C87B /* Pods-Flowerly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FQG26DZ84;
+				INFOPLIST_FILE = Flowerly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mohanedy98.Flowerly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E006A6E245CAA6200FAC914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2037924B96C66C44AA73EAE /* Pods-Flowerly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FQG26DZ84;
+				INFOPLIST_FILE = Flowerly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mohanedy98.Flowerly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E006A53245CAA5F00FAC914 /* Build configuration list for PBXProject "Flowerly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E006A6A245CAA6200FAC914 /* Debug */,
+				9E006A6B245CAA6200FAC914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E006A6C245CAA6200FAC914 /* Build configuration list for PBXNativeTarget "Flowerly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E006A6D245CAA6200FAC914 /* Debug */,
+				9E006A6E245CAA6200FAC914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E006A50245CAA5F00FAC914 /* Project object */;
+}
